@@ -5,6 +5,16 @@ import java.io.Serializable;
 public class User implements Serializable {
     private Integer id;
 
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -17,6 +27,7 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "id=" + id +
+                "username=" + username +
                 '}';
     }
 }
